@@ -1,0 +1,63 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(tdd)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(pnpm --filter web exec tsc:*)",
+      "Bash(git checkout:*)",
+      "Bash(grep:*)",
+      "Skill(better-auth-best-practices)",
+      "Bash(turbo build:*)",
+      "Bash(pnpm --filter auth types:*)",
+      "Bash(npx tsc:*)",
+      "Bash(cat:*)",
+      "Bash(pnpm lint:*)",
+      "Bash(turbo types:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Skill(superpowers:brainstorming)",
+      "Bash(gh repo view:*)",
+      "Bash(gh project list:*)",
+      "Bash(gh project view:*)",
+      "Skill(claudeception)",
+      "Bash(python3:*)",
+      "Skill(superpowers:writing-plans)",
+      "Skill(superpowers:subagent-driven-development)",
+      "Skill(superpowers:test-driven-development)",
+      "Bash(pnpm --filter web test:*)",
+      "Bash(pnpm test:*)",
+      "Bash(pnpm types:*)",
+      "Bash(pnpm install:*)"
+    ],
+    "defaultMode": "default"
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/claudeception-activator.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true,
+    "supabase@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "vercel@claude-plugins-official": true,
+    "stripe@claude-plugins-official": true
+  }
+}
