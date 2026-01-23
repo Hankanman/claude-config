@@ -1,0 +1,41 @@
+# Sensitive files - NEVER commit these
+**/.credentials.json
+**/credentials.json
+**/*credentials*
+**/*token*
+**/*secret*
+**/*.key
+**/*.pem
+
+# User-specific runtime data
+**/history.jsonl
+**/stats-cache.json
+**/cache/
+**/debug/
+**/downloads/
+**/file-history/
+**/paste-cache/
+**/plans/
+**/projects/
+**/session-env/
+**/shell-snapshots/
+**/statsig/
+**/tasks/
+**/telemetry/
+**/todos/
+**/chrome/
+
+# Plugin installations (managed by Claude)
+**/plugins/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editor
+.vscode/
+.idea/
+*.code-workspace
